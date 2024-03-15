@@ -5,14 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "ozge-erkeskin",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.3",
     "nodemailer": "^6.9.12",
     "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }
