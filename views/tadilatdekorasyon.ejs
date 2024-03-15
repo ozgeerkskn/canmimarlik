@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AKR MIMARLIK</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/detail.css" />
+  </head>
+
+  <!-- NAVBAR -->
+  <body>
+    <section id="home">
+      <header>
+        <div class="company-logo">
+          <img src="images/logoakr.png" alt="AKR MİMARLIK" class="logo-image" />
+          <div class="logo-text">AKR MİMARLIK</div>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="/" class="nav-link">ANA SAYFA</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">HAKKIMIZDA</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">HİZMETLERİMİZ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">PROJELERİMİZ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">İLETİŞİM</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="bx bx-menu"></i>
+          <i class="bx bx-x"></i>
+        </div>
+      </header>
+
+      <!-- NAVBAR END -->
+    </section>
+
+    <div class="container">
+      <div
+        class="image-section"
+        style="
+          background: url('images/decoration5.jpg') no-repeat center center;
+          background-size: cover;
+        "
+      >
+        >
+        <!-- Görsel CSS ile arka planda eklendi -->
+        <h1 class="main-title">TADİLAT DEKORASYON PROJELERİ</h1>
+      </div>
+      <div class="text-section">
+        <p>
+          AKR Mimarlık olarak, her mimari uygulama projesine özel ve kapsamlı
+          bir yaklaşım sergiliyoruz; müşterilerimizin hayallerini ve
+          ihtiyaçlarını anlayarak projeye başlıyor, benzersiz ve işlevsel
+          tasarımlar oluşturup, bu tasarımları detaylı ihtiyaç analizleri ve
+          müşteri geri bildirimleriyle zenginleştiriyoruz. Proje geliştirme
+          sürecimiz, disiplinler arası bir ekip işbirliği ile, sürdürülebilirlik
+          ve estetik değerleri ön planda tutarak, projenin inşaatından anahtar
+          teslimine kadar olan her adımını kapsıyor. Müşterilerimize, bütçe ve
+          zaman çerçevesi içinde, kaliteli ve uzun ömürlü mekanlar sunmak için
+          titiz bir çalışma yürütüyor, tamamlanan her projenin arkasında durarak
+          sürekli destek ve bakım hizmetleri sağlıyoruz.
+        </p>
+        <p>
+          AKR Mimarlık olarak, her mimari uygulama projesine özel ve kapsamlı
+          bir yaklaşım sergiliyoruz; müşterilerimizin hayallerini ve
+          ihtiyaçlarını anlayarak projeye başlıyor, benzersiz ve işlevsel
+          tasarımlar oluşturup, bu tasarımları detaylı ihtiyaç analizleri ve
+          müşteri geri bildirimleriyle zenginleştiriyoruz. Proje geliştirme
+          sürecimiz, disiplinler arası bir ekip işbirliği ile, sürdürülebilirlik
+          ve estetik değerleri ön planda tutarak, projenin inşaatından anahtar
+          teslimine kadar olan her adımını kapsıyor. Müşterilerimize, bütçe ve
+          zaman çerçevesi içinde, kaliteli ve uzun ömürlü mekanlar sunmak için
+          titiz bir çalışma yürütüyor, tamamlanan her projenin arkasında durarak
+          sürekli destek ve bakım hizmetleri sağlıyoruz.
+        </p>
+        <div class="space"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const bxMenu = document.querySelector(".bx-menu");
+      const bxX = document.querySelector(".bx-x");
+
+      const navBar = document.querySelector(".navbar");
+
+      // --- open menu ---
+
+      bxMenu.addEventListener("click", (e) => {
+        if (e.target.classList.contains("bx-menu")) {
+          navBar.classList.add("show-navbar");
+          bxMenu.classList.add("hide-bx");
+          bxX.classList.add("show-bx");
+        }
+      });
+
+      // --- close menu ---
+
+      bxX.addEventListener("click", (e) => {
+        if (e.target.classList.contains("bx-x")) {
+          navBar.classList.remove("show-navbar");
+          bxMenu.classList.remove("hide-bx");
+          bxX.classList.remove("show-bx");
+        }
+      });
+    </script>
+  </body>
+</html>
