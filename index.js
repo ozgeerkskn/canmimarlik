@@ -1,8 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import nodemailer from "nodemailer";
-import pg from "pg";
-import path from "path";
+
 const app = express();
 const port = 3000;
 
