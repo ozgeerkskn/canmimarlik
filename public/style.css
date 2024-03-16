@@ -269,7 +269,7 @@ header {
 
 @media (max-width: 768px) {
   #splash-screen {
-    display: none !important;
+    animation: fadeOutSplash 0s ease 1s forwards;
   }
   #services {
     height: 200vh;
