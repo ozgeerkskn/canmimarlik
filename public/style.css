@@ -333,6 +333,12 @@ header {
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
+  .main-container {
+    display: block !important;
+    flex-direction: column !important;
+    margin-top: 0 !important;
+    height: 100vh !important;
+  }
   .grid-container {
     display: block !important;
     color: white !important;
