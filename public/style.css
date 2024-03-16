@@ -425,17 +425,14 @@ a.social-link {
 #about {
   background: linear-gradient(to bottom, #ffffff 0%, #595756 100%);
   display: flex;
-  height: 100vh;
 }
 
 .about-container {
-  display: flex;
-  justify-content: center; /* Yatayda ortala */
-  align-items: center; /* Dikeyde ortala */
-  height: 100vh; /* Ekran yüksekliği kadar genişlik */
   flex-direction: column;
   padding-right: 20px;
   padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .about-text {
