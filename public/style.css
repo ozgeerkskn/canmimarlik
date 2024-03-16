@@ -374,8 +374,6 @@ header {
   }
   .info p {
     font-size: 1.3rem !important;
-    color: #441f02 !important;
-    text-decoration: none !important;
   }
   .fa-2x {
     font-size: 1em;
@@ -867,6 +865,7 @@ textarea {
 }
 .info p {
   font-size: 1.5em;
+  color: #441f02;
   display: flex;
   justify-content: center;
   margin: 10px 0;
