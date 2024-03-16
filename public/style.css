@@ -271,6 +271,13 @@ header {
   #splash-screen {
     animation: fadeOutSplash 0s ease 1s forwards;
   }
+  .about-container {
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
   #services {
     height: 200vh;
   }
@@ -428,6 +435,10 @@ a.social-link {
 }
 
 .about-container {
+  display: flex;
+  justify-content: center; /* Yatayda ortala */
+  align-items: center; /* Dikeyde ortala */
+  height: 100vh; /* Ekran yüksekliği kadar genişlik */
   flex-direction: column;
   padding-right: 20px;
   padding-left: 20px;
