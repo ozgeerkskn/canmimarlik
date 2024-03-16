@@ -272,11 +272,13 @@ header {
     animation: fadeOutSplash 0s ease 1s forwards;
   }
   .about-container {
-    flex-direction: column;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    display: block !important;
+    flex-direction: column !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    margin-top: 10px !important;
+    margin-bottom: 50px !important;
+    height: auto !important;
   }
   #services {
     height: 200vh;
