@@ -280,9 +280,7 @@ header {
     margin-bottom: 50px !important;
     height: auto !important;
   }
-  #services {
-    height: 200vh;
-  }
+
   .container {
     flex-direction: column;
 
