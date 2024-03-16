@@ -280,7 +280,9 @@ header {
     margin-bottom: 50px !important;
     height: auto !important;
   }
-
+  #services {
+    height: auto !important;
+  }
   .container {
     flex-direction: column;
 
@@ -335,7 +337,6 @@ header {
     display: block !important;
     flex-direction: column !important;
     margin-top: 0 !important;
-    height: 100vh !important;
   }
   .grid-container {
     display: block !important;
