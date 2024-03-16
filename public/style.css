@@ -47,6 +47,52 @@ body {
   font-size: 1rem;
 }
 
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 9999; /* Ekranın en üstünde olmasını sağlar */
+  animation: hideSplash 0s 3s forwards;
+}
+.splash-logo {
+  width: 100px;
+  height: auto;
+}
+.splash-text {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: #e0ddd9;
+  white-space: pre; /* Satır başları ve boşlukları korur */
+  overflow: hidden; /* Taşan içeriği gizler */
+
+  animation: typing 2s steps(40, end);
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Ana içeriğin 3 saniye sonra gösterilmesi */
+@keyframes hideSplash {
+  to {
+    display: none;
+  }
+}
+
 /* ================= NAVBAR ================ */
 header {
   display: flex;
@@ -859,61 +905,6 @@ textarea {
 
 strong {
   color: #441f02;
-}
-
-#splash-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  background-color: black;
-
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  z-index: 9999; /* Ekranın en üstünde olmasını sağlar */
-  animation: hideSplash 0s 1.5s forwards;
-}
-.splash-logo {
-  width: 100px;
-  height: auto;
-}
-.splash-text {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  color: #e0ddd9;
-  white-space: pre; /* Satır başları ve boşlukları korur */
-  overflow: hidden; /* Taşan içeriği gizler */
-
-  animation: typing 1s steps(40, end);
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* Ana içeriğin 3 saniye sonra gösterilmesi */
-@keyframes hideSplash {
-  to {
-    display: none;
-  }
-}
-
-@keyframes showContent {
-  from {
-    display: none;
-  }
-  to {
-    display: block;
-  }
 }
 
 /* Stil.css */
