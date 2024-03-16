@@ -638,6 +638,21 @@ bxX.addEventListener('click', (e)=> {
 
 
         </script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            // Splash ekranını al
+            var splashScreen = document.getElementById("splash-screen");
+          
+            // Animasyonun süresini al (2s)
+            var animationDuration = parseFloat(getComputedStyle(splashScreen).animationDuration) * 3000;
+          
+            // Splash ekranını gizleme işlemi
+            setTimeout(function() {
+              splashScreen.style.display = "none";
+            }, animationDuration);
+          });
+          
+        </script>
  
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
