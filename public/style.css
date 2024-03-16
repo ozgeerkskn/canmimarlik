@@ -269,7 +269,7 @@ header {
 
 @media (max-width: 768px) {
   #splash-screen {
-    display: none;
+    display: none !important;
   }
   #services {
     height: 200vh;
