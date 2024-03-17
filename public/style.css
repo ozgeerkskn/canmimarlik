@@ -207,8 +207,9 @@ header {
   display: flex; /* Flex container olarak tanımla */
   align-items: center; /* Dikey merkezleme */
   margin-bottom: 0;
-  height: calc(100vh - 60px); /* Navbar'ın yüksekliğini çıkart */
+  height: calc(100vh - 30px); /* Navbar'ın yüksekliğini çıkart */
   text-align: center; /* İçerik metinini merkezle */
+  overflow: hidden;
 }
 
 .image-container::before {
@@ -345,8 +346,10 @@ header {
   .connect {
     display: block !important;
     position: absolute;
+
     bottom: 60px;
     width: 100%;
+    overflow: hidden;
   }
   .carousel-caption h5 {
     font-size: 1rem;
