@@ -152,7 +152,7 @@ header {
   }
   header {
     padding: 0.5rem 1rem;
-    position: fixed;
+    position: relative;
   }
   .navbar {
     background-color: var(--dark-color);
@@ -300,6 +300,9 @@ header {
     padding-left: 20px !important;
     margin-top: 10px !important;
     margin-bottom: 50px !important;
+    height: auto !important;
+  }
+  .image-container {
     height: auto !important;
   }
   #services {
