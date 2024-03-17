@@ -62,7 +62,8 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--dark-color);
-  padding: 1rem 2rem;
+  padding: 0 1rem;
+  height: auto;
 }
 .company-logo {
   display: flex;
@@ -141,6 +142,7 @@ header {
 }
 #home {
   background-color: var(--dark-color);
+  height: 100vh;
 }
 
 @media screen and (max-width: 912px) {
@@ -202,12 +204,12 @@ header {
 .image-container {
   position: relative;
   width: 100vw;
-  /* Navbar'ın altında başlaması için yeterli üst boşluk ekleyin */
+
   margin-top: 50px; /* Navbar yüksekliğine eşit */
   display: flex; /* Flex container olarak tanımla */
   align-items: center; /* Dikey merkezleme */
   margin-bottom: 0;
-  height: calc(100vh - 30px); /* Navbar'ın yüksekliğini çıkart */
+  height: calc(90vh - 40px); /* Navbar'ın yüksekliğini çıkart */
   text-align: center; /* İçerik metinini merkezle */
   overflow: hidden;
 }
@@ -347,9 +349,7 @@ header {
     display: block !important;
     position: absolute;
 
-    bottom: 60px;
     width: 100%;
-    overflow: hidden;
   }
   .carousel-caption h5 {
     font-size: 1rem;
@@ -429,6 +429,7 @@ header {
   align-items: center; /* İçerikleri dikey olarak ortalar */
   gap: 80px; /* İkonlar arasında boşluk oluşturur */
   color: white; /* İkonların rengini beyaz yapar */
+  overflow: hidden;
 }
 a.social-link {
   display: flex;
