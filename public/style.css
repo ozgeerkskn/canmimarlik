@@ -305,6 +305,7 @@ header {
   .image-container {
     height: auto !important;
   }
+
   #services {
     height: auto !important;
   }
@@ -378,10 +379,6 @@ header {
     flex-direction: column; /* İçeriği yatay olarak sırala */
   }
 
-  .left,
-  .right {
-    width: 100%; /* Her bir sütunu ekranın yarısı yap */
-  }
   .carousel-indicators {
     display: none;
   }
@@ -401,9 +398,7 @@ header {
   .info {
     margin: 215px 15px 215px 15px;
   }
-  .right {
-    height: 100vh;
-  }
+
   .info p {
     font-size: 1.3rem !important;
   }
@@ -414,9 +409,23 @@ header {
     color: white !important;
     gap: 30px;
   }
+
+  .footer-container {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    font-size: 16px;
+    margin-top: 280%;
+    display: flex;
+    flex-direction: column; /* Öğeleri dikey olarak (alt alta) hizala */
+    justify-content: center; /* Dikey olarak ortala */
+    align-items: center; /* Yatay olarak ortala */
+    gap: 10px; /* Öğeler arasında boşluk */
+    width: 100%; /* İsteğe bağlı: genişliği tam ekran yap */
+    box-sizing: border-box;
+  }
 }
 
-/* Bu kısım, form elemanlarınızı ve metinlerinizi daha düzgün göstermek için */
 .contact-title {
   margin-bottom: 20px;
 }
@@ -960,27 +969,34 @@ strong {
 }
 
 /* Stil.css */
-
 #footer {
-  background-color: black; /* Arka plan rengi */
-  padding: 10px; /* Kenar boşluğu */
-  color: #b3aca7; /* Yazı rengi */
-  text-align: center; /* Yazıların ortalama yapılması */
-  font-family: "Lato", "sans-serif";
-  /* position: fixed; Sayfanın alt kısmına sabitle */
-  bottom: 0; /* Sayfanın en altına yerleştir */
-  width: 100%;
+  height: 100px;
   z-index: 999;
 }
+.footer-container {
+  background-color: #333; /* Footer arka plan rengi */
+  color: #fff; /* Metin rengi */
 
-#footer p {
-  display: inline; /* Paragrafları yan yana yerleştirme */
-  margin: 0 10px; /* Paragraflar arası boşluk */
+  font-size: 16px; /* Metin boyutu */
+  display: flex; /* Flex özelliklerini kullan */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
+
+.footer-container p {
+  margin: 0; /* Varsayılan dış boşluğu sıfırla */
+  display: flex; /* Flexbox kullanarak içerikleri yan yana hizala */
+  align-items: center;
+}
+
+.footer-container p span {
+  font-weight: bold; /* 'Powered by' ismi kalın */
+}
+
+/* FontAwesome ikonları için */
 .fa-regular {
-  /* Bu sınıfı FontAwesome ikonu için kullanıyorsanız */
-  margin-right: 5px;
-  margin-left: 5px;
+  color: #ccc; /* İkon rengi */
 }
 
 span {
