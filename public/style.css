@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400");
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap");
 *,
 *::before,
 *::after {
@@ -10,7 +11,7 @@
 
 /* ================= VARIABLE ================ */
 :root {
-  --primary-color: hsl(9, 94%, 61%);
+  --primary-color: hsl(9, 92%, 43%);
   --primary-color-alt: hsl(28, 72%, 83%);
   --second-color: #3e537c;
   --second-color-alt: hsla(220, 33%, 36%, 65%);
@@ -99,6 +100,7 @@ header {
 .nav-link {
   font-size: 1.1rem;
   letter-spacing: 0.05rem;
+
   position: relative;
   background: -webkit-linear-gradient(
     var(--primary-color-alt),
@@ -443,6 +445,7 @@ header {
   gap: 80px; /* İkonlar arasında boşluk oluşturur */
   color: white; /* İkonların rengini beyaz yapar */
   overflow: hidden;
+  margin-top: 20px;
 }
 a.social-link {
   display: flex;
@@ -452,6 +455,7 @@ a.social-link {
 }
 .text {
   margin-left: 15px;
+  color: #999999;
 }
 
 .social-link {
@@ -859,7 +863,7 @@ button {
 
   background: transparent;
   outline: none;
-  color: #726659;
+  color: #726659 !important;
 
   border: solid 1px #b3aca7;
   font-size: 1em; /* Artırılan yazı büyüklüğü */
@@ -988,10 +992,13 @@ strong {
   margin: 0; /* Varsayılan dış boşluğu sıfırla */
   display: flex; /* Flexbox kullanarak içerikleri yan yana hizala */
   align-items: center;
+  white-space: normal;
+  color: #ccc;
 }
 
 .footer-container p span {
   font-weight: bold; /* 'Powered by' ismi kalın */
+  color: #ccc;
 }
 
 /* FontAwesome ikonları için */
@@ -999,7 +1006,7 @@ strong {
   color: #ccc; /* İkon rengi */
 }
 
-span {
+.footer-container p span {
   background: -webkit-linear-gradient(
     var(--primary-color-alt),
     var(--primary-color)
