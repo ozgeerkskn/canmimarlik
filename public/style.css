@@ -303,7 +303,7 @@ header {
 
   @keyframes cursor-animation-mobile {
     0% {
-      left: 20%; /* Mobil cihazlarda başlangıç pozisyonu */
+      left: 33%; /* Mobil cihazlarda başlangıç pozisyonu */
     }
 
     100% {
