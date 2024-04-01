@@ -295,6 +295,22 @@ header {
   #splash-screen {
     animation: fadeOutSplash 0s ease 1s forwards;
   }
+  .splash-cursor {
+    animation: cursor-animation-mobile 1.8s steps(60) forwards !important;
+    width: 4px; /* Mobil cihazlarda daha küçük bir imleç genişliği */
+    height: 14px; /* Mobil cihazlarda daha küçük bir imleç yüksekliği */
+  }
+
+  @keyframes cursor-animation-mobile {
+    0% {
+      left: 20%; /* Mobil cihazlarda başlangıç pozisyonu */
+    }
+
+    100% {
+      left: 92%; /* Mobil cihazlarda bitiş pozisyonu */
+    }
+  }
+
   .about-container {
     display: block !important;
     flex-direction: column !important;
