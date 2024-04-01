@@ -937,28 +937,47 @@ strong {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  z-index: 9999; /* Ekranın en üstünde olmasını sağlar */
+  z-index: 9999;
   animation: fadeOutSplash 3s ease 3s forwards;
 }
 .splash-logo {
   width: 100px;
   height: auto;
 }
+.splash-cursor {
+  display: inline-block;
+  width: 8px; /* İmleç genişliği */
+  height: 28px; /* İmleç yüksekliği */
+  background-color: #fa9e27; /* İmleç rengi */
+  margin-left: 5px; /* Yazı ile arasında bir mesafe bırakır */
+  position: absolute; /* Mutlak konumlandırma */
+  animation: cursor-animation 2s steps(50) forwards; /* İmleç animasyonu */
+}
+
 .splash-text {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   color: #e0ddd9;
-  white-space: pre; /* Satır başları ve boşlukları korur */
-  overflow: hidden; /* Taşan içeriği gizler */
-
-  animation: typing 2s steps(40, end);
+  white-space: pre;
+  overflow: hidden;
+  position: relative; /* Göreceli konumlandırma */
+  animation: typing 2s steps(40) forwards; /* Yazı animasyonu */
 }
+
 @keyframes typing {
   from {
     width: 0;
   }
   to {
     width: 100%;
+  }
+}
+@keyframes cursor-animation {
+  0% {
+    left: 47%; /* "A" harfinin başlangıç pozisyonu */
+  }
+  100% {
+    left: 59%; /* Yazı bitiş pozisyonu */
   }
 }
 
