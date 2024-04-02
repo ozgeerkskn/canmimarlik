@@ -296,7 +296,31 @@ header {
   text-align: justify;
   margin: 10px 0;
 }
+.link-container {
+  padding: 0 20px; /* Ekranın sağ ve solundan 20px boşluk bırakır */
+}
 
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Dikey hizalama */
+}
+
+.link li a {
+  margin-right: 50px;
+  margin-left: 50px;
+  color: white;
+  font-family: "Lato", "sans-serif";
+}
+.bullet {
+  color: #ff6d00; /* Madde işaretinin rengi */
+  margin-right: 5px; /* Madde işareti ile metin arasında boşluk */
+}
+
+.separator {
+  color: #ff6d00; /* Ayraç rengi */
+  margin: 0 5px; /* Ayraç ile metin arasında boşluk */
+}
 @media (max-width: 768px) {
   #splash-screen {
     animation: fadeOutSplash 0s ease 1s forwards;
@@ -316,6 +340,24 @@ header {
       left: 92%; /* Mobil cihazlarda bitiş pozisyonu */
     }
   }
+
+  .bullet,
+  .separator {
+    display: none; /* Madde işareti ve ayraçları gizle */
+  }
+  .link li a {
+    animation: blink 1s infinite alternate; /* Yanıp sönen animasyon */
+}
+}
+
+@keyframes blink {
+  from {
+      color: gray; /* Başlangıçta turuncu renk */
+  }
+  to {
+      color: white; /* Sonunda görünmez */
+  }
+}
 
   .about-container {
     display: block !important;
