@@ -397,7 +397,7 @@ header {
   }
 
   .icon {
-    color: white !important;
+    color: #f47d00 !important;
   }
   .container-contact {
     flex-direction: column; /* İçeriği yatay olarak sırala */
@@ -694,7 +694,9 @@ h2 {
   margin: 0 0 5px 0; /* Başlık altında biraz boşluk */
   font-size: 2.1em; /* Başlık font boyutu */
   font-weight: bold;
-  color: #d6d3d0;
+}
+.con-title {
+  color: #bababa;
 }
 
 .content p {
@@ -762,6 +764,7 @@ h2 {
   padding-top: 8rem;
   padding-bottom: 3rem;
   font-family: "Lato", sans-serif;
+
   color: grey;
 }
 
