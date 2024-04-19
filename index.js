@@ -16,15 +16,15 @@ app.post("/send-email", (req, res) => {
   let transporter = nodemailer.createTransport({
     service: "outlook",
     auth: {
-      user: "akrmimarlik@outlook.com",
+      user: "xxx@outlook.com",
       pass: "rbymlhaiubipjddv",
     },
   });
 
   // E-posta gönderimi için gerekli bilgileri hazırlıyoruz
   let mailOptions = {
-    from: "akrmimarlik@outlook.com",
-    to: "akrmimarlik@outlook.com",
+    from: "xxx@outlook.com",
+    to: "xxx@outlook.com",
     subject: "İletişim Formu",
     text: `Gönderenin Adı: ${name}\nGönderenin E-posta: ${email}\nMesaj: ${message}`,
   };
