@@ -991,7 +991,7 @@ strong {
   white-space: pre;
   overflow: hidden;
   position: relative;
-  animation: typing 2s steps(40) forwards;
+  animation: typing 2s steps(45) forwards;
 }
 
 @keyframes typing {
@@ -1007,7 +1007,7 @@ strong {
     left: 47%;
   }
   100% {
-    left: 59%;
+    left: 61%;
   }
 }
 
